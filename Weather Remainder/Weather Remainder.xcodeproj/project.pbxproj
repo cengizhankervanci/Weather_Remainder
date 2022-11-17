@@ -51,6 +51,9 @@
 		18E6FAAB29263198005D7CD7 /* Weather Remainder */ = {
 			isa = PBXGroup;
 			children = (
+				18E6FABA29263E38005D7CD7 /* Model */,
+				18E6FABC29263E46005D7CD7 /* View */,
+				18E6FABB29263E3E005D7CD7 /* ViewModel */,
 				18E6FAAC29263198005D7CD7 /* Weather_RemainderApp.swift */,
 				18E6FAAE29263198005D7CD7 /* ContentView.swift */,
 				18E6FAB029263199005D7CD7 /* Assets.xcassets */,
@@ -65,6 +68,28 @@
 				18E6FAB329263199005D7CD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18E6FABA29263E38005D7CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18E6FABB29263E3E005D7CD7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18E6FABC29263E46005D7CD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = "vİEW";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
