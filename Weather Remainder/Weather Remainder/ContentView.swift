@@ -23,6 +23,9 @@ struct ContentView: View
     {
         ZStack
         {
+            Rectangle()
+                .fill(LinearGradient(gradient: Day, startPoint:.top, endPoint:.bottomTrailing))
+                .frame(width:UIScreen.main.bounds.width,height: UIScreen.main.bounds.height * 1.2)
             
             Rectangle()
                 .fill(LinearGradient(gradient: Day, startPoint:.top, endPoint:.bottomTrailing))
@@ -52,12 +55,13 @@ struct ContentView: View
                     Text("24°")
                         .font(.system(size: 60))
                         .foregroundColor(.white)
-                        .shadow(color:.white,radius: 1)
-                    
+                        .shadow(color:.white,radius: 0.7)
+
                     Text("Hava güneşli ve son derece açık gözüküyor. Günün keyfini çıkarın.")
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                 }
+                .offset(y:50)
                 
                 
                 Group
@@ -72,17 +76,50 @@ struct ContentView: View
                         
                         HStack
                         {
+                            Image("termo")
+                                .resizable()
+                                .scaledToFit()
+                                .shadow(radius: 10)
+                                .frame(width: 45)
                             Text("Min Temp : 22°")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .shadow(color:.black,radius: 1)
                             Spacer()
+                            Image("termo")
+                                .resizable()
+                                .scaledToFit()
+                                .shadow(radius: 10)
+                                .frame(width: 45)
                             Text("Max Temp : 25°")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .shadow(color:.black,radius: 1)
                         }.padding()
                             .offset(y:20)
                         
                             HStack
                             {
-                                Text("Wind Speed : 1 m/s")
+                                Image("wind")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .shadow(radius: 10)
+                                    .frame(width: 45)
+                                Text("Wind Speed : 10 m/s")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                                    .shadow(color:.black,radius: 1)
+                                    .frame(width: 120)
                                 Spacer()
+                                Image("humidity")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .shadow(radius: 10)
+                                    .frame(width: 45)
                                 Text("Humidity : %10")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                                    .shadow(color:.black,radius: 1)
                             }.padding()
                             .offset(y:75)
                         
