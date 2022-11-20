@@ -54,7 +54,7 @@ struct MainView: View
                 
                 Group
                 {
-                    Image("sun")
+                    Image(viewModel.weatherIcons(stat: viewModel.description))
                         .resizable()
                         .frame(width: 260,height: 260)
                     

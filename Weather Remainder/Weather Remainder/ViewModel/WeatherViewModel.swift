@@ -53,4 +53,17 @@ class WeatherViewModel : ObservableObject
         }
         task.resume()
     }
+    
+    func weatherIcons(stat : String) -> String
+    {
+        switch stat{
+        case "Clouds" : return "cloud"
+        case "Clear" : return "sun"
+        case "Rain" : return "rain"
+        case "Snow" : return "snowy"
+        case "Thunderstorm" : return "storm"
+        default:
+            return "clear"
+        }
+    }
 }
