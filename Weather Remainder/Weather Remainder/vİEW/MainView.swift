@@ -26,7 +26,7 @@ struct MainView: View
     var body: some View {
         ZStack
         {
-            if(hour < 19 && hour > 5)
+            if(hour < 18 && hour > 5)
             {
                 Rectangle()
                     .fill(LinearGradient(gradient: Day, startPoint:.top, endPoint:.bottomTrailing))
@@ -63,7 +63,7 @@ struct MainView: View
                         .foregroundColor(.white)
                         .shadow(color:.white,radius: 0.7)
                     
-                    Text("\(viewModel.comment)°")
+                    Text("Feels Like: \(viewModel.comment)°")
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                 }
@@ -73,7 +73,7 @@ struct MainView: View
                     ZStack
                     {
                         RoundedRectangle(cornerRadius: 35)
-                            .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height / 3.5)
+                            .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height / 3.9)
                             
                             .foregroundColor(.white.opacity(0.2))
                             .shadow(color:.white,radius: 10)
